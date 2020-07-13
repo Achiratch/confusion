@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Navbar, NavbarBrand } from "reactstrap";
 import Header from "./HeaderComponent";
 import Footer from "./FooterComponent";
 import Home from "./HomeComponent";
@@ -67,7 +66,7 @@ class Main extends Component {
               component={() => <Menu dishes={this.props.dishes} />}
             />
             <Route path="/menu/:dishId" component={DishWithId} />
-            <Route exact path="/contactus" component={Contact} />} />
+            <Route exact path="/contactus" component={Contact} />
             <Redirect to="/home" />
           </Switch>
         </div>
